@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+docx-files/*.docx 
+truminds-content1-and-new.docx
+truminds-content1-and-old.docx
