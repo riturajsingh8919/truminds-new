@@ -9,12 +9,16 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { HeroSlider } from "@/components/home/HeroSlider";
+import { AboutSection } from "@/components/home/AboutSection";
 
 export default function HomePage() {
   return (
     <div className="relative overflow-hidden bg-white">
       {/* Dynamic Light-Themed Hero Slider */}
       <HeroSlider />
+
+      {/* About Us Company Section */}
+      <AboutSection />
 
       {/* Trust & Key Metrics Strip */}
       <section className="py-12 sm:py-16 bg-slate-50/70 border-b border-slate-100">

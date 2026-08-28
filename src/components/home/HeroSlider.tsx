@@ -262,7 +262,7 @@ export function HeroSlider() {
           {/* Right Image Column with Framed Clinical Photography */}
           <div className="lg:col-span-6 flex justify-center">
             <div className="w-full rounded-3xl bg-white p-2.5 sm:p-3 shadow-xl border border-slate-200/90 ring-1 ring-black/5 relative overflow-hidden transition-all">
-              <div className="relative w-full aspect-16/10 rounded-2xl overflow-hidden bg-slate-100">
+              <div className="relative w-full h-64 sm:h-80 md:h-95 lg:h-105 rounded-2xl overflow-hidden bg-slate-100">
                 <Image
                   src={slide.imageSrc}
                   alt={slide.imageAlt}
