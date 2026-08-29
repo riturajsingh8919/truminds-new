@@ -7,7 +7,7 @@ import { AboutOrganicImage } from "./AboutOrganicImage";
 
 export function AboutSection() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 bg-white border-b border-slate-100 overflow-hidden">
+    <section className="relative py-10 bg-white border-b border-slate-100 overflow-hidden">
       {/* Background Soft Architectural Glow */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-sky-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
 

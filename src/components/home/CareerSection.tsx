@@ -14,7 +14,7 @@ import { CareerOrganicImage } from "./CareerOrganicImage";
 
 export function CareerSection() {
   return (
-    <section className="relative py-20 sm:py-28 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden">
+    <section className="relative py-10 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden">
       {/* Background Soft Architectural Glows */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-125 h-125 bg-emerald-50/50 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-0 right-0 w-125 h-125 bg-sky-50/50 rounded-full blur-3xl pointer-events-none -z-10" />

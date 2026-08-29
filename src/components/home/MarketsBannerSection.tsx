@@ -60,7 +60,7 @@ export function MarketsBannerSection() {
   const marqueeItems = [...MARKETS_LIST, ...MARKETS_LIST, ...MARKETS_LIST];
 
   return (
-    <section className="relative py-12 sm:py-16 bg-white overflow-hidden">
+    <section className="relative py-10 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Luxury Capsule Banner Container */}
         <div className="relative rounded-2xl sm:rounded-3xl bg-linear-to-r from-[#004a98] via-[#0068a5] to-[#047857] shadow-xl overflow-hidden flex flex-col md:flex-row items-center min-h-24 sm:min-h-28 p-2 sm:p-3 border border-white/20">

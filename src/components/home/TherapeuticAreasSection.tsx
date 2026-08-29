@@ -108,7 +108,7 @@ export function TherapeuticAreasSection() {
   const ActiveIcon = activeDomain.icon;
 
   return (
-    <section className="relative py-20 sm:py-24 lg:py-28 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden">
+    <section className="relative py-10 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden">
       {/* Background Architectural Subtle Glows */}
       <div className="absolute top-1/4 right-0 w-125 h-125 bg-sky-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-10 left-10 w-112.5 h-112.5 bg-blue-100/30 rounded-full blur-3xl pointer-events-none -z-10" />

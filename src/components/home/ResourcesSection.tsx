@@ -130,7 +130,7 @@ export function ResourcesSection() {
   const [activeTab, setActiveTab] = useState<"blogs" | "events">("blogs");
 
   return (
-    <section className="relative py-24 sm:py-32 bg-[#f8fafc]/50 border-b border-slate-200/80 overflow-hidden">
+    <section className="relative py-10 bg-[#f8fafc]/50 border-b border-slate-200/80 overflow-hidden">
       {/* Background Subtle Architectural Ambient Glows */}
       <div className="absolute top-1/4 left-1/4 w-125 h-125 bg-blue-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute bottom-1/4 right-1/4 w-125 h-125 bg-sky-100/40 rounded-full blur-3xl pointer-events-none -z-10" />

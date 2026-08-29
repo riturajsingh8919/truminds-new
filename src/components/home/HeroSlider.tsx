@@ -171,10 +171,10 @@ export function HeroSlider() {
       <div className="absolute -top-24 right-1/4 w-96 h-96 bg-sky-200/25 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 left-10 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Left Content Column */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+          {/* Left Content Column (Order 2 on mobile, Order 1 on Desktop) */}
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-6 order-2 lg:order-1">
             {/* Category / Sub-heading */}
             <div className="flex items-center gap-2.5">
               <span className="w-8 h-1 bg-[#0068a5] rounded-full" />
@@ -259,8 +259,8 @@ export function HeroSlider() {
             </div>
           </div>
 
-          {/* Right Image Column with Framed Clinical Photography */}
-          <div className="lg:col-span-6 flex justify-center">
+          {/* Right Image Column (Order 1 on mobile, Order 2 on Desktop) */}
+          <div className="lg:col-span-6 flex justify-center order-1 lg:order-2">
             <div className="w-full rounded-3xl bg-white p-2.5 sm:p-3 shadow-xl border border-slate-200/90 ring-1 ring-black/5 relative overflow-hidden transition-all">
               <div className="relative w-full h-64 sm:h-80 md:h-95 lg:h-105 rounded-2xl overflow-hidden bg-slate-100">
                 <Image

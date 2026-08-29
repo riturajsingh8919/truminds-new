@@ -142,7 +142,7 @@ export function ServicesSection() {
     SERVICES_PANELS.find((p) => p.id === activePanelId) || SERVICES_PANELS[0];
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 bg-linear-to-b from-slate-100/95 via-sky-50/40 to-slate-100/80 border-b border-slate-200/80 overflow-hidden">
+    <section className="relative py-10 bg-linear-to-b from-slate-100/95 via-sky-50/40 to-slate-100/80 border-b border-slate-200/80 overflow-hidden">
       {/* Subtle Architectural Dot Mesh */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] bg-size-[24px_24px] opacity-35" />
 

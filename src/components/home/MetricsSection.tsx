@@ -104,7 +104,7 @@ const METRIC_ITEMS: MetricCardItem[] = [
 
 export function MetricsSection() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-28 bg-white border-b border-slate-100 overflow-hidden">
+    <section className="relative py-10 bg-white border-b border-slate-100 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Centered Headline with Pill Badge */}
         <div className="text-center max-w-4xl mx-auto mb-16 sm:mb-20 space-y-4">

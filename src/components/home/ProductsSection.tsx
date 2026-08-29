@@ -279,7 +279,7 @@ export function ProductsSection() {
 
   return (
     <section
-      className="relative py-20 sm:py-28 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden"
+      className="relative py-10 bg-[#f8fafc] border-b border-slate-200/80 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
