@@ -6,6 +6,7 @@ import { MetricsSection } from "@/components/home/MetricsSection";
 import { TherapeuticAreasSection } from "@/components/home/TherapeuticAreasSection";
 import { MarketsBannerSection } from "@/components/home/MarketsBannerSection";
 import { ProductsSection } from "@/components/home/ProductsSection";
+import { ResourcesSection } from "@/components/home/ResourcesSection";
 
 export default function HomePage() {
   return (
@@ -30,6 +31,9 @@ export default function HomePage() {
 
       {/* TruForm™ Clinical Technology Platform Showcase */}
       <ProductsSection />
+
+      {/* Clinical Intelligence & Global Events Resources Section */}
+      <ResourcesSection />
     </div>
   );
 }
