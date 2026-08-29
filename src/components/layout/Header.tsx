@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ArrowRight } from "lucide-react";
 import { NAVIGATION_DATA, NavGroup } from "@/data/navigation";
 import { DropdownMenu } from "./DropdownMenu";
 import { MegaMenu } from "./MegaMenu";
@@ -64,7 +64,7 @@ export function Header() {
   };
 
   const activeMegaMenuGroup = NAVIGATION_DATA.find(
-    (group) => group.type === "megamenu" && group.title === activeMenu
+    (group) => group.type === "megamenu" && group.title === activeMenu,
   );
 
   return (
@@ -104,7 +104,7 @@ export function Header() {
               </div>
 
               {/* Desktop Navigation Links (Visible on 1120px and above) */}
-              <div className="hidden min-[1120px]:flex items-center space-x-0.5 xl:space-x-1">
+              <div className="hidden min-[1120px]:flex items-center space-x-1 xl:space-x-1.5">
                 {NAVIGATION_DATA.map((group: NavGroup) => {
                   const hasDropdown = group.type === "dropdown";
                   const hasMegaMenu = group.type === "megamenu";
@@ -114,6 +114,25 @@ export function Header() {
                     (group.slug !== "/" && pathname.startsWith(group.slug));
 
                   if (!hasDropdown && !hasMegaMenu) {
+                    if (group.slug === "/contact-us") {
+                      return (
+                        <Link
+                          key={group.slug}
+                          href={group.slug}
+                          onClick={closeAllMenus}
+                          className="group/contact relative inline-flex items-center gap-2 ml-2 px-5 py-2.5 rounded-none bg-linear-to-r from-[#004a98] via-[#005ea6] to-[#0068a5] hover:from-[#003b7a] hover:via-[#004d8c] hover:to-[#005c93] text-white font-bold text-[13.5px] xl:text-[14.5px] tracking-wide shadow-md shadow-[#004a98]/20 hover:shadow-xl hover:shadow-[#004a98]/30 transition-all duration-300 overflow-hidden cursor-pointer"
+                        >
+                          {/* Background Soft Shimmer Effect */}
+                          <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/contact:translate-x-full transition-transform duration-700 ease-out pointer-events-none" />
+
+                          <span>Contact Us</span>
+
+                          {/* Dynamic Arrow with Rotation & Slide on Hover */}
+                          <ArrowRight className="w-4 h-4 text-white transition-transform duration-300 group-hover/contact:translate-x-1 group-hover/contact:-rotate-45" />
+                        </Link>
+                      );
+                    }
+
                     return (
                       <Link
                         key={group.slug}
@@ -152,7 +171,9 @@ export function Header() {
                         <span>{group.title}</span>
                         <ChevronDown
                           className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                            isMenuOpen ? "rotate-180 text-primary" : "text-slate-400"
+                            isMenuOpen
+                              ? "rotate-180 text-primary"
+                              : "text-slate-400"
                           }`}
                         />
                       </button>

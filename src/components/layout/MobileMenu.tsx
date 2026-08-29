@@ -93,6 +93,20 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             const isExpanded = expandedSections[group.title];
 
             if (!hasSubmenu) {
+              if (group.slug === "/contact-us") {
+                return (
+                  <Link
+                    key={group.slug}
+                    href={group.slug}
+                    onClick={handleClose}
+                    className="group/mobcontact mt-3 flex items-center justify-between py-3.5 px-4 rounded-none bg-linear-to-r from-[#004a98] via-[#005ea6] to-[#0068a5] text-white font-extrabold text-sm shadow-md shadow-[#004a98]/20 active:scale-[0.98] transition-all"
+                  >
+                    <span>{group.title}</span>
+                    <ArrowRight className="w-4 h-4 text-white group-hover/mobcontact:translate-x-1 group-hover/mobcontact:-rotate-45 transition-transform" />
+                  </Link>
+                );
+              }
+
               return (
                 <Link
                   key={group.slug}

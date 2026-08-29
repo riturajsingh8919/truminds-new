@@ -28,11 +28,6 @@ export interface NavGroup {
 
 export const NAVIGATION_DATA: NavGroup[] = [
   {
-    title: "Home",
-    slug: "/",
-    type: "link",
-  },
-  {
     title: "About Us",
     slug: "/about-us",
     type: "link",
