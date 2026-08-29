@@ -7,6 +7,7 @@ import { TherapeuticAreasSection } from "@/components/home/TherapeuticAreasSecti
 import { MarketsBannerSection } from "@/components/home/MarketsBannerSection";
 import { ProductsSection } from "@/components/home/ProductsSection";
 import { ResourcesSection } from "@/components/home/ResourcesSection";
+import { CareerSection } from "@/components/home/CareerSection";
 
 export default function HomePage() {
   return (
@@ -34,6 +35,9 @@ export default function HomePage() {
 
       {/* Clinical Intelligence & Global Events Resources Section */}
       <ResourcesSection />
+
+      {/* Life & Careers at TruMinds Graphical Section */}
+      <CareerSection />
     </div>
   );
 }
