@@ -3,6 +3,7 @@ import { HeroSlider } from "@/components/home/HeroSlider";
 import { AboutSection } from "@/components/home/AboutSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { MetricsSection } from "@/components/home/MetricsSection";
+import { TherapeuticAreasSection } from "@/components/home/TherapeuticAreasSection";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,9 @@ export default function HomePage() {
 
       {/* Impact & Key Capabilities Metrics Section (User Reference Design) */}
       <MetricsSection />
+
+      {/* Luxury Curated Therapeutic Areas Section */}
+      <TherapeuticAreasSection />
     </div>
   );
 }
