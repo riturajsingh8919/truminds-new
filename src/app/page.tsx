@@ -5,6 +5,7 @@ import { ServicesSection } from "@/components/home/ServicesSection";
 import { MetricsSection } from "@/components/home/MetricsSection";
 import { TherapeuticAreasSection } from "@/components/home/TherapeuticAreasSection";
 import { MarketsBannerSection } from "@/components/home/MarketsBannerSection";
+import { ProductsSection } from "@/components/home/ProductsSection";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,9 @@ export default function HomePage() {
 
       {/* Infinite Auto-Scrolling Markets We Serve Banner */}
       <MarketsBannerSection />
+
+      {/* TruForm™ Clinical Technology Platform Showcase */}
+      <ProductsSection />
     </div>
   );
 }
