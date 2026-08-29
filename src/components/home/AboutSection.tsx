@@ -40,30 +40,34 @@ export function AboutSection() {
 
             {/* Key Value Highlights */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-slate-50 transition-colors">
-                <div className="p-2 rounded-xl bg-[#004a98]/10 text-[#004a98] shrink-0 mt-0.5">
+              <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 shadow-2xs hover:shadow-xs hover:border-[#004a98]/30 transition-all">
+                <div className="p-2.5 rounded-xl bg-linear-to-br from-[#004a98] to-[#0068a5] text-white shrink-0 mt-0.5 shadow-xs">
                   <Workflow className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900">
-                    TruForm AI Automation
-                  </h4>
-                  <p className="text-[11px] text-slate-500 mt-0.5 leading-snug">
-                    Automated SDTM/ADaM datasets and TLF generation.
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <h4 className="text-xs font-bold text-slate-900">
+                      TruForm AI Suite
+                    </h4>
+                  </div>
+                  <p className="text-[11px] text-slate-500 leading-snug">
+                    Automated SDTM/ADaM datasets and instant TLF generation.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/70 hover:bg-slate-50 transition-colors">
-                <div className="p-2 rounded-xl bg-[#0068a5]/10 text-[#0068a5] shrink-0 mt-0.5">
+              <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50/80 border border-slate-200/80 shadow-2xs hover:shadow-xs hover:border-[#0068a5]/30 transition-all">
+                <div className="p-2.5 rounded-xl bg-linear-to-br from-[#0068a5] to-[#004a98] text-white shrink-0 mt-0.5 shadow-xs">
                   <Stethoscope className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900">
-                    20 Therapeutic Domains
-                  </h4>
-                  <p className="text-[11px] text-slate-500 mt-0.5 leading-snug">
-                    Specialized oncology, CNS, and cardiovascular teams.
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <h4 className="text-xs font-bold text-slate-900">
+                      20 Therapeutic Areas
+                    </h4>
+                  </div>
+                  <p className="text-[11px] text-slate-500 leading-snug">
+                    Specialized oncology, CNS, and cardiovascular expertise.
                   </p>
                 </div>
               </div>
@@ -97,36 +101,6 @@ export function AboutSection() {
               secondaryImageSrc="/images/hero/hero-cro.jpg"
               secondaryImageAlt="Clinical research laboratory testing"
             />
-          </div>
-        </div>
-
-        {/* Markets We Serve Summary Strip */}
-        <div className="mt-14 pt-10 border-t border-slate-100">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="p-4 rounded-xl bg-slate-50/70 border border-slate-200/60 flex items-center gap-3">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#004a98] shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-800">
-                Pharmaceutical
-              </span>
-            </div>
-            <div className="p-4 rounded-xl bg-slate-50/70 border border-slate-200/60 flex items-center gap-3">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#0068a5] shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-800">
-                Biotechnology
-              </span>
-            </div>
-            <div className="p-4 rounded-xl bg-slate-50/70 border border-slate-200/60 flex items-center gap-3">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#004a98] shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-800">
-                Medical Device & Diagnostics
-              </span>
-            </div>
-            <div className="p-4 rounded-xl bg-slate-50/70 border border-slate-200/60 flex items-center gap-3">
-              <div className="w-2.5 h-2.5 rounded-full bg-[#0068a5] shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-800">
-                Contract Research (CROs)
-              </span>
-            </div>
           </div>
         </div>
       </div>
