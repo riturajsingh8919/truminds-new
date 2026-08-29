@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/home/AboutSection";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { MetricsSection } from "@/components/home/MetricsSection";
 import { TherapeuticAreasSection } from "@/components/home/TherapeuticAreasSection";
+import { MarketsBannerSection } from "@/components/home/MarketsBannerSection";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,9 @@ export default function HomePage() {
 
       {/* Luxury Curated Therapeutic Areas Section */}
       <TherapeuticAreasSection />
+
+      {/* Infinite Auto-Scrolling Markets We Serve Banner */}
+      <MarketsBannerSection />
     </div>
   );
 }
